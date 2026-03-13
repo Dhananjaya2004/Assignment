@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Top Bar */
+
+.top-bar {
+    background: #f5f5f5;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.top-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
+
+/* Header */
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 120px;
+}
+
+/* Search */
+
+.search-box {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-box input {
+    padding: 10px;
+    border: none;
+    width: 250px;
+    outline: none;
+}
+
+.search-box button {
+    background: #0c5c3d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Header Icons */
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-box i {
+    font-size: 18px;
+    background: #0c5c3d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.small {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+nav {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+/* Hero
+
+.hero {
+    background: #f4f4f4;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image img {
+    width: 350px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.arrival {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #0c5c3d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+} */
+
+
+
+.hero {
+    background: #f4f4f4;
+}
+
+.hero-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.hero-slide {
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.hero-image img {
+    width: 350px;
+}
+
+
+
+
+
+
+
+/*scroll hewfief hjgchjbs*/
+
+.hero-image {
+    position: relative;
+}
+
+/* Main Plant */
+.plant-main {
+    width: 350px;
+}
+
+/* Floating Plant */
+.plant-small {
+    position: absolute;
+    width: 120px;
+    top: -20px;
+    right: -40px;
+
+    animation: floatPlant 4s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes floatPlant {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+/*gcydsgcudsygcdyugc*/ 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+}
+
+/* ---------- CARDS ---------- */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.card {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 25px;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background-size 0.5s ease;
+}
+
+.card:hover {
+    background-size: 110%;
+}
+
+.card h4 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.btn {
+    background: #0c5c43;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Card Images */
+
+.card1 {
+    background-image: url("https://elementor.dostguru.com/plantish/wp-content/uploads/2025/03/1.webp");
+ 
+}
+
+.card2 {
+    background-image: url("https://elementor.dostguru.com/plantish/wp-content/uploads/2025/03/2.webp");
+   
+}
+
+.card3 {
+    background-image: url("https://elementor.dostguru.com/plantish/wp-content/uploads/2025/03/3.webp");
+
+}
+
+
+
+/* ---------- ABOUT SECTION ---------- */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px;
+    background: white;
+}
+
+.about-image img {
+    width: 450px;
+}
+
+.about-text {
+    max-width: 450px;
+}
+
+.about-text h5 {
+    color: #888;
+    letter-spacing: 2px;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.about-text p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.read-btn {
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #0c5c43;
+    color: #0c5c43;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
